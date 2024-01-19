@@ -24,7 +24,7 @@ Uploaded the task_1-problem solution, using 2 programming languages. Python and 
 ## Document
 <ul>
   <p>
-    The program only takes positive integer as input in product quantity segment.
+    The program only accept positive integer as input in product quantity segment.
     If user provide any string or negative integer it will throw a warning message.
     Until the user provide a correct input it will continuously popup that message.
   </p>
