@@ -76,10 +76,12 @@ print("Billing:-")
 print("Product-Name:\t\t Quantity\t  Amount") 
 for pro in shop: print(f" {pro: <25} {shop[pro]: <15} {shop[pro]*product_list[pro]}")
 #print("\n")
-print("Subtotal:",total_pr)
-print(f"Discount Applied \"{discount_offer}\" ✨✨",f"The Discount amount: {discount_price}",sep="\n")
-print(f"The shipping fee: {ship_pr}",f"The gift wrap fee:{gift}",sep="\n")
-print("Total:",discount_price+ship_pr+gift)
+print("Subtotal: ",total_pr)
+if(discount_offer != ""):
+    print(f"Discount Applied \"{discount_offer}\" ✨✨",f"The Discount amount: {discount_price}",sep="\n")
+else: print("Sorry! No Discount Applied")
+print(f"The shipping fee: {ship_pr}",f"The gift wrap fee: {gift}",sep="\n")
+print("Total: ",discount_price+ship_pr+gift)
 
 if(input("")):pass
 #print(product_list,shop,total_pr,total_qn,gift)
