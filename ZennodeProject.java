@@ -89,7 +89,7 @@ public class ZennodeProject {
             }
         }
         System.out.println("\n");
-        int shipPr = (totalQn/10)*5;
+        int shipPr = (totalQn/10)*5;    //Calculate shipping fee
         if(totalQn%10 > 0) shipPr+=5;
 
 
@@ -100,7 +100,9 @@ public class ZennodeProject {
             System.out.println(" "+pro+"\t\t   "+shop.get(pro)+"\t\t  "+shop.get(pro)*productList.get(pro));
         //System.out.println("\n")
         System.out.println("Subtotal: "+totalPr);
-        System.out.println("Discount Applied \""+discountOffer+"\" owhoo!\nThe Discount amount: "+discountPrice);
+        if(!discountOffer.equals(""))
+            System.out.println("Discount Applied \""+discountOffer+"\" owhoo!\nThe Discount amount: "+discountPrice);
+        else System.out.println("Sorry! No Discount Applied");
         System.out.println("The shipping fee: "+shipPr+"\nThe gift wrap fee: "+gift);
         float allTotal = discountPrice+shipPr+gift;
         System.out.println("Total:"+allTotal);
