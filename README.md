@@ -32,4 +32,17 @@ Uploaded the task_1-problem solution, using 2 programming languages. Python and 
     Same goes for the gift wrap confirmation, it will only receive a single string Y or N capital and small both.
   </p>
     And lastly it will generate a bill as per the instruction.
+  <pre>
+    Billing:-
+    Product-Name:	     Quantity	      Amount
+     Chocolate                 12              300
+     Chips                     5               100
+     Candy                     8               80
+    Subtotal: 480
+    Discount Applied "bulk_10_discount" ✨✨
+    The Discount amount: 432.0
+    The shipping fee: 15
+    The gift wrap fee:20
+    Total: 467.0
+  </pre>
 </ul>
